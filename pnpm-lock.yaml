@@ -20,9 +20,6 @@ importers:
       tailwindcss:
         specifier: ^4.1.12
         version: 4.1.12
-      zahrawi-shared:
-        specifier: file:packages/zahrawi-shared
-        version: file:packages/zahrawi-shared
 
 packages:
 
@@ -1736,9 +1733,6 @@ packages:
   yoctocolors@2.1.2:
     resolution: {integrity: sha512-CzhO+pFNo8ajLM2d2IW/R93ipy99LWjtwblvC1RsoSUMZgyLbYFr221TnSNT7GjGdYui6P459mw9JH/g/zW2ug==}
     engines: {node: '>=18'}
-
-  zahrawi-shared@file:packages/zahrawi-shared:
-    resolution: {directory: packages/zahrawi-shared, type: directory}
 
   zod-to-json-schema@3.24.6:
     resolution: {integrity: sha512-h/z3PKvcTcTetyjl1fkj79MHNEjm+HpD6NXheWjzOekY7kV+lwDYnHw+ivHkijnCSMz1yJaWBD9vu/Fcmk+vEg==}
@@ -3633,8 +3627,6 @@ snapshots:
       yoctocolors: 2.1.2
 
   yoctocolors@2.1.2: {}
-
-  zahrawi-shared@file:packages/zahrawi-shared: {}
 
   zod-to-json-schema@3.24.6(zod@3.25.76):
     dependencies:
