@@ -1,5 +1,5 @@
 ---
-
+import '../styles/global.css'
 ---
 
 <html lang="en">
@@ -8,9 +8,151 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Zahrawi-dent</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="font-sans bg-gradient-to-br from-background-darker via-background-dark to-background-light text-primary-foreground ">
+
+    <!-- Navbar -->
+    <header class="flex items-center justify-between px-8 py-4 border-b border-slate-700/50 backdrop-blur-md bg-background-light/20 sticky top-0 z-50">
+        <h1 class="text-2xl font-extrabold text-slate-50">
+            Zahrawi<span class="text-teal-500">Dent</span>
+        </h1>
+        <nav class="flex space-x-8">
+            <a href="#projects" class="text-slate-300 font-medium hover:text-teal-300 transition-colors duration-300">Projects</a>
+            <a href="#contact" class="text-slate-300 font-medium hover:text-teal-300 transition-colors duration-300">Contact</a>
+            <a href="#mission" class="text-slate-300 font-medium hover:text-teal-300 transition-colors duration-300">Mission</a>
+        </nav>
+    </header>
+
+
+		<!-- Hero Section -->
+		<section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+<!-- bg-gradient-to-br from-teal-400 via-blue-500 to-purple-600 -->
+			<div class="text-center z-10 px-4">
+				<!-- <h1 class="text-6xl md:text-7xl font-extrabold mb-6 animate-pulse">ZahrawiDent</h1> -->
+            <h1 class="text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 bg-gradient-to-r from-slate-50 to-teal-300 bg-clip-text text-transparent animate-fadeInUp">
+                ZahrawiDent
+            </h1>
+				<p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed">
+					Empowering dentistry through open-source software and educational content.
+				</p>
+        <a href="#projects" class="inline-block bg-primary/80 text-white px-8 py-4 rounded-full font-semibold hover:bg-primary transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-primary/30 animate-fadeInUpDelayLong">
+                Discover Our Projects
+            </a>
+			</div>
+     <div class="absolute right-10 top-1/2 transform -translate-y-1/2 opacity-10 text-9xl animate-float block lg:hidden">
+          🦷
+      </div>
+      <div class="animate-float hidden lg:block">
+          <div class="relative">
+              <div class="w-96 h-96 bg-white/10 rounded-full glass-effect flex items-center justify-center">
+                  <div class="w-72 h-72 bg-white/20 rounded-full flex items-center justify-center">
+                      <div class="text-8xl">🦷</div>
+                  </div>
+              </div>
+              <div class="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full animate-pulse-slow"></div>
+              <div class="absolute -bottom-8 -left-8 w-16 h-16 bg-pink-400 rounded-full animate-pulse-slow" style="animation-delay: 1s;"></div>
+          </div>
+      </div>
+
+			<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+				<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+					<path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+				</svg>
+			</div>
+		</section>
+
+
+
+<!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-background-light/40">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-slate-50">Our Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Chronology Hub -->
+                <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 p-8 rounded-2xl hover:transform hover:-translate-y-2 hover:border-teal-500/50 hover:shadow-2xl hover:shadow-black/20 transition-all duration-300 group">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mr-4 group-hover:bg-teal-400 transition-colors duration-300">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-50">Chronology Hub</h3>
+                    </div>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        A visual and interactive timeline of tooth eruption and shedding — helping
+                        students understand dental development at a glance.
+                    </p>
+                    <a href="https://zahrawi-dent.github.io/chronohub" class="inline-flex items-center text-teal-300 font-semibold hover:text-teal-400 transition-colors duration-300">
+                        Explore Chronology Hub
+                        <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Zahrawi-dent Blog -->
+                <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 p-8 rounded-2xl hover:transform hover:-translate-y-2 hover:border-teal-500/50 hover:shadow-2xl hover:shadow-black/20 transition-all duration-300 group">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mr-4 text-2xl group-hover:bg-teal-400 transition-colors duration-300">
+                            📖
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-50">Zahrawi-dent Blog</h3>
+                    </div>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        An open educational resource written by and for dental students and professionals.
+                    </p>
+                    <a href="https://zahrawi-dent.github.io/blog" class="inline-flex items-center text-teal-300 font-semibold hover:text-teal-400 transition-colors duration-300">
+                        Read Our Blog
+                        <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-slate-50">Get in Touch</h2>
+            <p class="text-xl text-slate-300 mb-8 leading-relaxed">
+                We are building in the open. Contributions, feedback, and collaborations are always welcome!
+                Contribute to open-source dental tools, share your knowledge, and make a difference in the dental community.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#" class="bg-teal-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-teal-600 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    Get Involved
+                </a>
+                <a href="#" class="border-2 border-teal-500 text-teal-300 px-8 py-4 rounded-full font-semibold hover:bg-teal-500 hover:text-white transition-all duration-300 hover:transform hover:-translate-y-1">
+                    Learn More
+                </a>
+                <a href="https://github.com/zahrawi-dent" class="border-2 border-teal-500 text-teal-300 px-8 py-4 rounded-full font-semibold hover:bg-teal-500 hover:text-white transition-all duration-300 hover:transform hover:-translate-y-1">
+                    Visit GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+ <!-- Mission -->
+    <section id="mission" class="py-16 px-6 text-center bg-background-light/40">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-semibold mb-6 text-slate-50">Our Mission</h3>
+            <p class="text-lg text-slate-300 leading-relaxed">
+                Through open source software and freely available educational materials,
+                we're working to democratize dentistry and empower dentists and dental students worldwide.
+            </p>
+        </div>
+    </section>
+
+
+		<!-- Footer -->
+		<footer class="py-12 px-6 md:px-10">
+			<div class="max-w-6xl mx-auto text-center">
+				<p class="text-sm ">Zahrawi-Dent. Built in Egypt with ❤️ for the dental community.</p>
+			</div>
+		</footer>
 	</body>
 </html>

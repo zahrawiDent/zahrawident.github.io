@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+
+  --color-background-light: oklch(0.2667 0.032 239.48);
+  --color-background-dark: oklch(0.1767 0.025 239.48);
+  --color-background-darker: oklch(0.1567 0.022 239.48);
+  /* Use teal for light mode  */
+
+  --color-primary: oklch(0.616 0.1041 183.19);
+  --color-primary-muted: oklch(0.616 0.1041 183.19 / 0.5);
+  --color-primary-foreground: oklch(0.98 0.01 239.5);
+}
